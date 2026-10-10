@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+build/
+app/build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Local SDK / tools installed for one-off builds
+_tools/
+_sdk/
+_probe/
+_ref_OppoCustomSideButton/
+_probe_out/
+
+# Signing — keep keystore config out of version control.
+# Provide keystore/keystore.properties locally before release builds.
+keystore/keystore.properties
+keystore/*.jks

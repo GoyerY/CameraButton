@@ -1,0 +1,8 @@
+# Xposed scope
+#
+# The module hooks android.os.OplusKeyEventManager, which lives in the system
+# framework process. Scope must include "Android 系统框架" (package: android).
+#
+# Optional: com.oplus.camera is NOT required — actions are executed from
+# system_server via startActivityAsUser.
+android
