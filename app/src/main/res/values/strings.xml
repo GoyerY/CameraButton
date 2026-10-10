@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">相机实体键定制</string>
+    <string name="module_description">为OPPO/一加 相机实体键（ColorOS 松脆键）自定义短按、长按、双击动作。基于 LSPosed 挂载 OplusKeyEventManager 接管按键事件。</string>
 </resources>

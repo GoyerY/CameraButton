@@ -1,8 +1,9 @@
-# Xposed scope
+# 作用域：system_server 进程（模块在onSystemServerStarting 中挂钩）
 #
-# The module hooks android.os.OplusKeyEventManager, which lives in the system
-# framework process. Scope must include "Android 系统框架" (package: android).
+# LSPosed 自1.9.1 起修正了历史命名：
+#   system_server          ->包名 system，管理器中显示为「系统框架」
+#   ChooserActivity 等系统 UI -> 包名 android
 #
-# Optional: com.oplus.camera is NOT required — actions are executed from
-# system_server via startActivityAsUser.
-android
+# 本模块挂钩 android.os.OplusKeyEventManager，该类运行在 system_server 中，
+# 因此必须使用 system，而不是 android。
+system
